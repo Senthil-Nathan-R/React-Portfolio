@@ -8,7 +8,7 @@ Welcome to my portfolio website! This project showcases my skills and experience
 
 ## 🚀 Live Demo
 
-You can view the live version of my portfolio website [here](https://delightful-gnome-3e1e0e.netlify.app/).
+You can view the live version of my portfolio website [here](https://senthilnathan-portfolio.netlify.app/).
 
 ## 🛠️ Technologies Used
 
