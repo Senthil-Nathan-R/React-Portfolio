@@ -170,7 +170,7 @@ function Home({ isLoading }) {
           <p className='text-accent mb-12'>Explore my top projects, crafted with creativity and precision. Each highlights my expertise in UI/UX design and web development, showcasing how I blend aesthetics with functionality. Check out my portfolio to see these impactful digital creations.</p>
 
           {/* Project card for smaller screens */}
-         <div className='md:hidden my-10'>
+<div className='md:hidden my-10'>
   <Swiper
     modules={[EffectCreative, Pagination]}
     effect="creative"
@@ -191,8 +191,8 @@ function Home({ isLoading }) {
     grabCursor={true}
   >
     <SwiperSlide
-      className='w-full flex flex-col justify-center items-center'
-      style={{ margin: 'auto' }}
+      className='flex flex-col justify-center items-center'
+      style={{ width: '90%', margin: 'auto' }}  // Set width to 90% for better fit
     >
       <ProjectCard
         laptopImg={portfolio}
@@ -211,6 +211,7 @@ function Home({ isLoading }) {
     </SwiperSlide>
   </Swiper>
 </div>
+
 
 
           {/* Project card for larger screens */}
