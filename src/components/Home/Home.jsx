@@ -169,53 +169,9 @@ function Home({ isLoading }) {
           </div>
           <p className='text-accent mb-12'>Explore my top projects, crafted with creativity and precision. Each highlights my expertise in UI/UX design and web development, showcasing how I blend aesthetics with functionality. Check out my portfolio to see these impactful digital creations.</p>
 
-          {/* Project card for smaller screens */}
-<div className='md:hidden my-10'>
-  <Swiper
-    modules={[EffectCreative, Pagination]}
-    effect="creative"
-    creativeEffect={{
-      prev: {
-        shadow: true,
-        origin: 'left center',
-        translate: ['-5%', 0, -200],
-        rotate: [0, 100, 0],
-      },
-      next: {
-        origin: 'right center',
-        translate: ['5%', 0, -200],
-        rotate: [0, -100, 0],
-      },
-    }}
-    pagination={true}
-    grabCursor={true}
-  >
-    <SwiperSlide
-      className='flex flex-col justify-center items-center'
-      style={{ width: '90%', margin: 'auto' }}  // Set width to 90% for better fit
-    >
-      <ProjectCard
-        laptopImg={portfolio}
-        title="Portfolio"
-        description=" A personal portfolio built with React.js, showcasing projects, skills, and experience in a modern, responsive design. Includes interactive sections, smooth animations, and a user-friendly interface for easy navigation. Features dynamic content updates and a clean, professional layout."
-        codeLink="https://github.com/Senthil-Nathan-R/React-Portfolio"
-        className='hidden'
-      />
-      <ProjectCard
-        laptopImg={voting}
-        title="Online Voting System"
-        description="An online voting system built with secure, efficient, and user-friendly features. Admins can manage elections with start and end dates, while voters can choose candidates from dropdown lists. The platform ensures seamless voting and real-time results in a modern, intuitive interface for easy access."
-        codeLink="https://github.com/Senthil-Nathan-R/Online-Voting-System.git"
-        className='hidden'
-      />
-    </SwiperSlide>
-  </Swiper>
-</div>
-
-
 
           {/* Project card for larger screens */}
-          <div className='hidden md:flex md:flex-wrap justify-center  items-center gap-20 '>
+          <div className='flex justify-center items-center flex-wrap gap-20 my-16'>
             <ProjectCard
             laptopImg={portfolio}
             
@@ -233,7 +189,6 @@ function Home({ isLoading }) {
             description="An online voting system built with secure, efficient, and user-friendly features. Admins can manage elections with start and end dates, while voters can choose candidates from dropdown lists. 
             The platform ensures seamless voting and real-time results in a modern, intuitive interface for easy access."
             codeLink="https://github.com/Senthil-Nathan-R/Online-Voting-System.git"
-            className='hidden'
                 />
           </div>
         </div>
