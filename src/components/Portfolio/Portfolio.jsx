@@ -3,76 +3,75 @@ import { Breadcrumbs } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import ProjectCard from './ProjectCard';
 import Connect from '../Connect'
-import './Portfolio.css'
+import './Portfolio.css';
+import portfolio from '../../assets/Portfolio.png';
+import voting from '../../assets/Voting.png';
+import library from '../../assets/image-1.jpg';
+import login from '../../assets/loginpage.jpg';
+import bank from '../../assets/image-4.jpg';
+import cal from '../../assets/simple_calculator.png';
+import crud from '../../assets/CRUD.png';
 
 function Portfolio() {
   const [showAll, setShowAll] = useState(false);
 
   const projects = [
     {
-      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1laptop',
-      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1mob',
-      title: "IceCreamsCorner Web App",
-      description: "Developed an online ice cream shop using Django. Features include user authentication, shopping cart with limits, order placement, and history. Responsive design ensures a seamless experience across devices.",
-      demoLink: "https://anuj459.pythonanywhere.com/",
-      codeLink: "https://github.com/Anuj579/IceCreamsCorner_webapp"
+      laptopImg: portfolio,
+      title:"Portfolio",
+      description:" A personal portfolio built with React.js, showcasing projects, skills, and experience in a modern, responsive design. Includes interactive sections, smooth animations, and a user-friendly interface for easy navigation. Features dynamic content updates and a clean, professional layout.",
+
+      codeLink: "https://github.com/Senthil-Nathan-R/React-Portfolio"
     },
     {
-      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj2laptop',
-      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj2mob',
-      title: "Time Tracer Website",
-      description: "A web app for tracking time, offering countdown and elapsed time functionalities. Input a target date to see the remaining or elapsed time, featuring a user-friendly interface and a responsive, modern design.",
-      demoLink: "https://timetracer9.netlify.app/",
-      codeLink: "https://github.com/Anuj579/TimeTracer"
+      laptopImg: voting,
+      title:"Online Voting System",
+      description:"An online voting system built with secure, efficient, and user-friendly features. Admins can manage elections with start and end dates, while voters can choose candidates from dropdown lists. The platform ensures seamless voting and real-time results in a modern, intuitive interface for easy access.",
+
+      codeLink: "https://github.com/Senthil-Nathan-R/Online-Voting-System.git"
+    },
+    
+    {
+      laptopImg: crud,
+      title:"CURD Operation",
+      description:"A CRUD Operation application built with Spring Boot and a REST API, supporting create, read, update, and delte (CRUD) operation. The system offers seamless interaction, dynamic content updates,and ensures data consistency for effective management.",
+
+      codeLink: "https://github.com/Senthil-Nathan-R/CRUD-Operation "
     },
     {
-      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/movieapp-laptop',
-      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/movieapp-mob',
-      title: "Movie Search App",
-      description: "A movie search application that lets users quickly find movies by title. Featuring responsive design, Bootstrap integration, and dynamic API-driven content with smooth loading states for a clean, user-friendly experience.",
-      demoLink: "https://quickmoviesearch.netlify.app/",
-      codeLink: "https://github.com/Anuj579/movie-search-app"
+      laptopImg: login,
+      title:"Login Page",
+      description:"A Login Page built with JSP, MySQL, Servlet, and JavaScript ensuring secure and efficient user authentication. Users enter credentials, Validated against a MySQL database. JavaScript enhances the interface with dynamic validation, providing smooth interaction and a user-friendly, reliable login experience.",
+      codeLink: "https://github.com/Senthil-Nathan-R/Login-Page"
     },
     {
-      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj3laptop',
-      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj3mob',
-      title: "Tax Calculator",
-      description: "A web app for calculating income after tax deductions. Input your gross income, extra income, and age group to get accurate results, displayed in INR. Includes user-friendly error handling and supports multiple tax rates.",
-      demoLink: "https://taxcalculator99.netlify.app/",
-      codeLink: "https://github.com/Anuj579/Tax-calculator"
+      laptopImg: bank,
+      title:"Banking Interface",
+      description:"A Banking interface built with Java, featuring ATM Card Activation and User Management. Users can activate their cards and manage thier profiles a secure and intuitive system. The platform ensures seamless integration with backend services, providing efficient, reliable, and user-friendly banking operations.",
+
+      codeLink: "https://github.com/Senthil-Nathan-R/Banking-Interface-ATM-Card-Activation-and-User-Management"
     },
     {
-      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj4laptop',
-      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj4mob',
-      title: "Todo App",
-      description: "An intuitive Todo application allowing easy theme switching between light and dark modes. It lets you add, edit, and delete tasks with the ability to manage multiple items simultaneously and clear selected tasks with a single click.",
-      demoLink: "https://mytodoapp9.netlify.app/",
-      codeLink: "https://github.com/Anuj579/ToDo-App-ReactJS"
+      laptopImg: cal,
+      title:"Calculator",
+      description:"A calculator built with JavaScript, HTML, and CSS, offering basic arithmetic operations in a simple and user-friendly interface. The design features a clean layout and responsive buttons, ensuring smooth functionality. JavaScript powers the calculations, while HTML and CSS provide an intuitive, modern design.",
+      codeLink: "https://github.com/Senthil-Nathan-R/Calculator"
     },
+
+
     {
-      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj5laptop',
-      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj5mob',
-      title: "User Info Viewer",
-      description: "A React-based app showcasing user details fetched from an API. Features include a list of users with avatars, detailed information in a dialog box, and a smooth custom scrollbar for enhanced user experience.",
-      demoLink: "https://userinfoviewer.netlify.app/",
-      codeLink: "https://github.com/Anuj579/User-info-viewer"
+      laptopImg: library,
+      title:"Library Management System",
+      description:"A Java-based library management system that enables users to efficiently manage books, track loans, and maintain records. The user-friendly interface ensures smooth operations for both users and administrators.",
+      codeLink: "https://github.com/Senthil-Nathan-R/LibraryManagementSystem"
     },
-    {
-      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj6laptop',
-      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj6mob',
-      title: "Responsive Design",
-      description: "A sleek, responsive website built with React and Bootstrap. It showcases my frontend development skills with a clean, professional design and seamless responsiveness across all various devices and screen sizes.",
-      demoLink: "https://responsivereactsite.netlify.app/",
-      codeLink: "https://github.com/Anuj579/Responsive-react-site"
-    },
-    {
-      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj7laptop',
-      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj7mob',
-      title: "Demo UI Design",
-      description: "A professionally designed, responsive website created to highlight front-end development skills. This project utilizes HTML, CSS, and Bootstrap to deliver a visually appealing and functional design.",
-      demoLink: "https://atgworldui.netlify.app/",
-      codeLink: "https://github.com/Anuj579/ATG-World-UI-design"
-    },
+    // {
+    //   laptopImg: voting,
+    //   title:"Library Management ",
+    //   description:"A web app for tracking time,time functionalities. Input a target date to see the remaining or elapsed time, featuring a user-friendly interface and a responsive, modern design.Input a target date to see the remaining or elapsed time, featuring a user-friendly interface and a responsive",
+    //   demoLink: "https://anuj459.pythonanywhere.com/",
+    //   codeLink: "https://github.com/Anuj579/IceCreamsCorner_webapp"
+    // }
   ];
 
   const visibleProjects = showAll ? projects : projects.slice(0, 3);

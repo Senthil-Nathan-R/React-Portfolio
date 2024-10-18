@@ -43,9 +43,10 @@ function About() {
             <h1 className='font-cairo font-bold text-4xl text-center mt-10'>Know Who I Am</h1>
             <hr className='border-b-4 border-secondary w-40 mt-3 mb-14 mx-auto md:mx-0' />
           </div>
-          <p className='text-accent'>Hi, I'm Anuj Chaudhary, a web developer from Haryana, India. I create engaging and interactive websites with a passion for coding. Currently pursuing a BCA online, I’m deeply focused on both front-end and back-end development to enhance my skills.</p><br />
-          <p className='text-accent'>Beyond coding, I enjoy exploring design trends, listening to music, and playing video games, which help me stay creative and inspired. These hobbies keep me motivated and refreshed.</p><br />
-          <p className='text-accent'>Committed to continuous learning, I strive to push the boundaries of web development and turn innovative ideas into reality, delivering high-quality solutions for diverse projects.</p>
+          <p className='text-accent'>Hi, I'm Senthil Nathan, a Full Stack Developer from Vellore, Tamil Nadu, India, with a passion for creating engaging and interactive websites. I recently completed my Bachelor of Engineering in Computer Science and am currently pursuing a Java Full-Stack course,
+             focusing on both front-end and back-end development to expand my expertise.</p><br />
+          <p className='text-accent'>I collaborate closely with teams to implement data solutions, troubleshoot issues, and ensure efficient database operations. Additionally, I specialize in developing and maintaining stored procedures while optimizing query performance.</p><br />
+          <p className='text-accent'>My ultimate goal is to deliver reliable and secure data management systems that meet business needs effectively.</p>
         </div>
 
         {/* Areas of Expertise div */}
@@ -56,6 +57,30 @@ function About() {
           </div>
           <p className='text-accent'>I’ve built a diverse skill set through education and hands-on projects. My expertise spans several areas, allowing me to tackle complex challenges effectively. Here are key areas where I excel and deliver high-quality results.</p>
           <div className='flex flex-wrap justify-center gap-12 my-14'>
+          <Tooltip
+              content="Java"
+              animate={{
+                mount: { scale: 1, y: 0 },
+                unmount: { scale: 0, y: 25 },
+              }}>
+              <div><SkillBox icon={pythonIcon} className='bg-pythonColor border-pythonColor' /></div>
+            </Tooltip>
+            <Tooltip
+              content="JavaScript"
+              animate={{
+                mount: { scale: 1, y: 0 },
+                unmount: { scale: 0, y: 25 },
+              }}>
+              <div><SkillBox icon={jsIcon} className='bg-jsColor border-jsColor' /></div>
+            </Tooltip>
+            <Tooltip
+              content="React JS"
+              animate={{
+                mount: { scale: 1, y: 0 },
+                unmount: { scale: 0, y: 25 },
+              }}>
+              <div><SkillBox icon={reactIcon} className='bg-reactColor border-reactColor' /></div>
+            </Tooltip>
             <Tooltip
               content="HTML"
               animate={{
@@ -73,14 +98,7 @@ function About() {
               }}>
               <div className='cursor-default'><SkillBox icon={cssIcon} className='bg-cssColor border-cssColor' /></div>
             </Tooltip>
-            <Tooltip
-              content="JavaScript"
-              animate={{
-                mount: { scale: 1, y: 0 },
-                unmount: { scale: 0, y: 25 },
-              }}>
-              <div><SkillBox icon={jsIcon} className='bg-jsColor border-jsColor' /></div>
-            </Tooltip>
+           
             <Tooltip
               content="Tailwind CSS"
               animate={{
@@ -97,30 +115,8 @@ function About() {
               }}>
               <div><SkillBox icon={bootstrapIcon} className='bg-bootstrapColor border-bootstrapColor' /></div>
             </Tooltip>
-            <Tooltip
-              content="React JS"
-              animate={{
-                mount: { scale: 1, y: 0 },
-                unmount: { scale: 0, y: 25 },
-              }}>
-              <div><SkillBox icon={reactIcon} className='bg-reactColor border-reactColor' /></div>
-            </Tooltip>
-            <Tooltip
-              content="Python"
-              animate={{
-                mount: { scale: 1, y: 0 },
-                unmount: { scale: 0, y: 25 },
-              }}>
-              <div><SkillBox icon={pythonIcon} className='bg-pythonColor border-pythonColor' /></div>
-            </Tooltip>
-            <Tooltip
-              content="Django"
-              animate={{
-                mount: { scale: 1, y: 0 },
-                unmount: { scale: 0, y: 25 },
-              }}>
-              <div><SkillBox icon={djangoIcon} className='bg-djangoColor border-djangoColor' /></div>
-            </Tooltip>
+            
+            
 
           </div>
         </div>
@@ -131,18 +127,10 @@ function About() {
             <h1 className='font-cairo font-bold text-4xl text-center mt-10'>Tools I play With</h1>
             <hr className='border-b-4 border-secondary w-40 mt-3 mb-14 mx-auto md:mx-0' />
           </div>
-          <p className='text-accent'>I use various tools to streamline my workflow and boost productivity. Key tools include WordPress for content management, Figma for design and prototyping, Visual Studio Code for coding, and GitHub for version control and collaboration.</p>
+          <p className='text-accent'>I use various tools to streamline my workflow and boost productivity. Eclipse and Visual Studio Code for coding, and GitHub for version control and collaboration.</p>
           <div className='flex flex-wrap justify-center gap-12 my-14'>
             <Tooltip
-              content="WordPress"
-              animate={{
-                mount: { scale: 1, y: 0 },
-                unmount: { scale: 0, y: 25 },
-              }}>
-              <div><SkillBox icon={wordpressIcon} className='bg-wordpressColor border-wordpressColor' /></div>
-            </Tooltip>
-            <Tooltip
-              content="Figma"
+              content="Eclipse"
               animate={{
                 mount: { scale: 1, y: 0 },
                 unmount: { scale: 0, y: 25 },
@@ -174,18 +162,21 @@ function About() {
             <h1 className='font-cairo font-bold text-4xl text-center'>Education and Certifications</h1>
             <hr className='border-b-4 border-secondary w-48 mt-3 mb-14 mx-auto md:mx-0' />
           </div>
-          <p className='text-accent'>My education and certifications provide a strong foundation in web development. From basic to advanced skills, these achievements showcase my dedication to learning and expertise in creating effective web applications.</p>
+          <p className='text-accent'>My education and certifications provide a strong foundation in Full Stack development. From basic to advanced skills, these achievements showcase my dedication to learning and expertise in creating effective web applications.</p>
           <div className='flex justify-center md:gap-20 flex-col md:flex-row mt-10'>
             <div className='mb-5'>
               <h2 className='font-cairo text-2xl font-semibold border-b-4 border-secondary w-max'>Education:</h2>
-              <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={educationIcon} alt="degree-icon" className='mt-1' /><span>Bachelor of Computer Applications (BCA) <br /> <span className='font-extralight'>Mangalayatan University, Aligarh, India
-                (Currently Pursuing)</span></span></p>
+              <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={educationIcon} alt="degree-icon" className='mt-1' /><span>Computer Science Engineering (B.E) <br /> <span className='font-extralight'>C.Abdul Hakeem College of Engineering and Technology, Ranipet, Tamil Nadu </span></span></p>
+              <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={educationIcon} alt="degree-icon" className='mt-1' /><span>HSC  <br /> <span className='font-extralight'>Vidhyalakshmi Matric Higher Secondary School, Vellore, Tamil Nadu.</span><br /> <span className='font-extralight'></span></span></p>
+              <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={educationIcon} alt="degree-icon" className='mt-1' /><span>SSLC <br /> <span className='font-extralight'>Vidhyalakshmi CBSE School, Vellore, Tamil Nadu. </span></span></p>
+            
+            
             </div>
             <div>
               <h2 className='font-cairo text-2xl font-semibold border-b-4 border-secondary w-max'>Certifications:</h2>
-              <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={certificationIcon} alt="certification-icon" className='mt-1' /><span>Web Designing Technology <br /> <span className='font-extralight'>Incapp, 2022</span></span></p>
-              <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={certificationIcon} alt="certification-icon" className='mt-1' /><span>Python Technology <br /> <span className='font-extralight'>Incapp, 2023</span></span></p>
-              <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={certificationIcon} alt="certification-icon" className='mt-1' /><span>Django Technology <br /> <span className='font-extralight'>Incapp, 2023</span></span></p>
+              <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={certificationIcon} alt="certification-icon" className='mt-1' /><span>Java Full Stack Development <br /> <span className='font-extralight'>Besant Technologies, 2024</span></span></p>
+              <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={certificationIcon} alt="certification-icon" className='mt-1' /><span>JavaScript Basic <br /> <span className='font-extralight'>Udemy, 2024</span></span></p>
+              <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={certificationIcon} alt="certification-icon" className='mt-1' /><span>Full Stack <br /> <span className='font-extralight'>Infosys Springboard, 2023</span></span></p>
             </div>
           </div>
 
@@ -196,11 +187,13 @@ function About() {
         <div className='py-20 flex flex-col items-center'>
           <p className='text-accent italic mb-6'>Curious about my journey and achievements? Take a closer look at my detailed resume.</p>
           <img src={arrowIcon} alt="arrow-icon" className='translate-x-10 mb-3' />
-          <a href="https://drive.google.com/file/d/1VfrwdctemkqPPCoykPZG-y8HkXSLqmue/view?usp=sharing" target='_blank'><CustomButton
+          <a href="https://docs.google.com/document/d/1MRi7q0htK3EcaTv2nPOFzkZ-PfZ8AflP5lNEQpKRgnM/view?pli=1" >
+          <button>
+          <CustomButton
             text="View My Resume"
             icon={downloadIcon}
             className='w-[18px]'
-          /></a>
+          /></button></a>
         </div>
 
         {/* Let's Connect div */}

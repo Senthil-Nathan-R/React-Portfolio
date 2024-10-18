@@ -14,15 +14,19 @@ function ServiceCard({ image, title, description }) {
     return (
         <>
             <div onClick={handleOpen}
-                className="service-card relative overflow-hidden h-[250px] w-[250px] md:h-[200px] md:w-[200px] rounded-2xl md:hover:shadow-card-glow transition-all duration-300 cursor-pointer"
+                className="service-card relative overflow-hidden h-[250px] w-[250px] md:h-[200px] md:w-[300px] rounded-2xl md:hover:shadow-card-glow transition-all duration-300 cursor-pointer"
                 style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
                 <div className="absolute inset-0 bg-black opacity-50"></div>
-                <div className="absolute inset-0 flex flex-col justify-center md:justify-start md:mt-14 mx-8 md:mx-4 text-start text-white">
-                    <div className='h-3 w-3 rounded-full bg-secondary mb-2'></div>
-                    <h3 className="text-[26px] md:text-2xl font-cairo font-bold ">{title}</h3>
+                {/* <div className="absolute inset-0 flex  justify-center align-center md:justify-center  md:mt-20 mx-8 md:mx-4 text-white">
+                    <h3 className="text-[26px] md:text-2xl font-cairo font-bold text-center md:mt-[0px] sm:mt-[20px] ">{title}</h3>
                     
+                </div> */}
+                <div className="absolute inset-0 flex justify-center items-center mx-8 md:mx-4 text-white">
+                     <h3 className="text-[26px] md:text-2xl font-cairo font-bold text-center sm:mt-[20px] md:mt-0">{title}</h3>
                 </div>
+
+
             </div>
             <Dialog
                 className='bg-primary border border-[#ffffff25]'
