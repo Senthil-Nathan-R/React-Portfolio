@@ -3,7 +3,7 @@
 Welcome to my portfolio website! This project showcases my skills and experience as a web developer. It features a variety of pages and functionalities to give you an insight into my work and expertise.
 
 <div align="center">
-  <img alt="Demo" src="./Screenshot/screenshot.png" />
+  <img alt="Demo" src="./src/assets/Portfolio.png" />
 </div>
 
 ## 🚀 Live Demo
