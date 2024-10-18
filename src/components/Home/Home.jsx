@@ -190,24 +190,25 @@ function Home({ isLoading }) {
               pagination={true}
               grabCursor={true}
             >
-              <SwiperSlide className='justify-center  items-center' style={{ display: 'flex' , flexDirection: 'column'}}>
-                <ProjectCard
-                  laptopImg={portfolio}
-                  title="Portfolio"
-                  description=" A personal portfolio built with React.js, showcasing projects, skills, and experience in a modern, responsive design. Includes interactive sections, smooth animations, 
-                  and a user-friendly interface for easy navigation. Features dynamic content updates and a clean, professional layout."
-                  codeLink="https://github.com/Senthil-Nathan-R/React-Portfolio"
-                  className='hidden'
-                />
-                <ProjectCard
-                  laptopImg={voting}
-                  title="Online Voting System"
-                  description="An online voting system built with secure, efficient, and user-friendly features. Admins can manage elections with start and end dates, while voters can choose candidates from dropdown lists. 
-                  The platform ensures seamless voting and real-time results in a modern, intuitive interface for easy access."
-                  codeLink="https://github.com/Senthil-Nathan-R/Online-Voting-System.git"
-                  className='hidden'
-                />
-              </SwiperSlide>
+                            <SwiperSlide 
+  className='flex justify-center items-center' 
+  style={{ display: 'flex', flexDirection: 'column' }}
+>
+  <ProjectCard
+    laptopImg={portfolio}
+    title="Portfolio"
+    description="A personal portfolio built with React.js, showcasing projects, skills, and experience in a modern, responsive design. Includes interactive sections, smooth animations, and a user-friendly interface for easy navigation. Features dynamic content updates and a clean, professional layout."
+    codeLink="https://github.com/Senthil-Nathan-R/React-Portfolio"
+    className='w-full max-w-sm' // Adjust width for responsiveness
+  />
+  <ProjectCard
+    laptopImg={voting}
+    title="Online Voting System"
+    description="An online voting system built with secure, efficient, and user-friendly features. Admins can manage elections with start and end dates, while voters can choose candidates from dropdown lists. The platform ensures seamless voting and real-time results in a modern, intuitive interface for easy access."
+    codeLink="https://github.com/Senthil-Nathan-R/Online-Voting-System.git"
+    className='w-full max-w-sm' // Adjust width for responsiveness
+  />
+</SwiperSlide>
             </Swiper>
           </div>
 
