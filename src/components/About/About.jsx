@@ -187,7 +187,7 @@ function About() {
         <div className='py-20 flex flex-col items-center'>
           <p className='text-accent italic mb-6'>Curious about my journey and achievements? Take a closer look at my detailed resume.</p>
           <img src={arrowIcon} alt="arrow-icon" className='translate-x-10 mb-3' />
-          <a href="https://docs.google.com/document/d/1MRi7q0htK3EcaTv2nPOFzkZ-PfZ8AflP5lNEQpKRgnM/view?pli=1" >
+          <a href="https://drive.google.com/file/d/1KsngqeC79q5VSDfuYJVykUgGSsJrOWG4/view?usp=drivesdk" >
           <button>
           <CustomButton
             text="View My Resume"
