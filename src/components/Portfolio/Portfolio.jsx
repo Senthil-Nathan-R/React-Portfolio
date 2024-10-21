@@ -33,7 +33,7 @@ function Portfolio() {
     
     {
       laptopImg: crud,
-      title:"CURD Operation",
+      title:"CRUD Operation",
       description:"A CRUD Operation application built with Spring Boot and a REST API, supporting create, read, update, and delte (CRUD) operation. The system offers seamless interaction, dynamic content updates,and ensures data consistency for effective management.",
 
       codeLink: "https://github.com/Senthil-Nathan-R/CRUD-Operation "
@@ -64,14 +64,7 @@ function Portfolio() {
       title:"Library Management System",
       description:"A Java-based library management system that enables users to efficiently manage books, track loans, and maintain records. The user-friendly interface ensures smooth operations for both users and administrators.",
       codeLink: "https://github.com/Senthil-Nathan-R/LibraryManagementSystem"
-    },
-    // {
-    //   laptopImg: voting,
-    //   title:"Library Management ",
-    //   description:"A web app for tracking time,time functionalities. Input a target date to see the remaining or elapsed time, featuring a user-friendly interface and a responsive, modern design.Input a target date to see the remaining or elapsed time, featuring a user-friendly interface and a responsive",
-    //   demoLink: "https://anuj459.pythonanywhere.com/",
-    //   codeLink: "https://github.com/Anuj579/IceCreamsCorner_webapp"
-    // }
+    }
   ];
 
   const visibleProjects = showAll ? projects : projects.slice(0, 3);
